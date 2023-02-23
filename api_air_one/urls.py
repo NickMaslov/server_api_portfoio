@@ -1,12 +1,6 @@
-# from django.urls import path
+from rest_framework.routers import DefaultRouter
 
 from . import views
-
-# urlpatterns = [
-#     path("city/", views.CityListCreateView.as_view()),
-# ]
-
-from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 router.register(r"cities", views.CityViewSet)
