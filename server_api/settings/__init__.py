@@ -1,6 +1,7 @@
-from .production import *
+from .settings import *
 
+# keeping your secret key local
 try:
-    from .local import *
+    from .local_settings import *
 except ImportError:
     pass
