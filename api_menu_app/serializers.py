@@ -27,7 +27,7 @@ class PlaceDetailSerializer(serializers.ModelSerializer):
 class PlaceSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Place
-        fields = ["id", "name", "image"]
+        fields = ["url", "id", "name", "image"]
 
 
 class OrderSerializer(serializers.ModelSerializer):
